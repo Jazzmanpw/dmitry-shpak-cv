@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  h2 {
+    @apply text-2xl text-primary-main;
+  }
+
+  hr {
+    @apply text-text-secondary;
+  }
+
+  hr.vertical {
+    @apply border-t-0 border-r h-auto w-0;
+  }
+
+  article {
+    @apply flex flex-col gap-4;
+  }
+
+  .progressbar {
+    @apply h-2 relative bg-primary-light w-full mt-2
+    after:block after:h-full after:content-[''] after:bg-primary-main after:w-0;
+  }
+
+  .progressbar[data-level="3"] {
+    @apply after:w-3/5;
+  }
+
+  .progressbar[data-level="4"] {
+    @apply after:w-4/5;
+  }
+
+  .progressbar[data-level="5"] {
+    @apply after:w-full;
+  }
+}
