@@ -6,7 +6,7 @@
   "author": "Dmitry Shpak <jazzmanpw@mail.ru>",
   "private": true,
   "scripts": {
-    "build": "npx tailwindcss -i ./src/tailwind.css -o ./public/style.css --minify && cp ./src/index.html ./public/index.html",
+    "build": "npx tailwindcss -i ./src/tailwind.css -o ./public/style.css --minify && cp ./src/index.html ./public/index.html && cp ./src/assets/photo.jpg ./public/assets/photo.jpg",
     "start": "npx tailwindcss -i ./src/tailwind.css -o ./src/style.css --watch"
   },
   "devDependencies": {
